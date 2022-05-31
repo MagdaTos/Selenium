@@ -14,11 +14,11 @@ public class SelectorTest {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://testeroprogramowania.github.io/selenium/basics.html");
-        //clickOnMe
+        //clickOnMe button
         By buttonId = By.id("clickOnMe");
         WebElement clickOnMeButton = driver.findElement(buttonId);
 
-        //fname
+        //fname input
 //        By firstName = By.name("fname");
 //        WebElement firstNameInput = driver.findElement(firstName);
         WebElement firstNameInput2 = driver.findElement(By.name("fname"));
